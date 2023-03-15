@@ -212,6 +212,23 @@
       "deliveryFee": 20,
       "products": [],
       "id": 1
+    },
+    {
+      "address": "Koszalin",
+      "phone": "+48788209930",
+      "totalPrice": 47,
+      "subtotalPrice": 27,
+      "totalNumber": 3,
+      "deliveryFee": 20,
+      "products": [
+        {
+          "id": "breakfast",
+          "amount": 3,
+          "price": 27,
+          "priceSingle": 9
+        }
+      ],
+      "id": 2
     }
   ]
 }
