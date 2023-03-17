@@ -2,7 +2,8 @@
   > * {
     display: none;
   }
-  >.active {
+  
+  > .active {
     display: block;
   }
 }
@@ -14,6 +15,7 @@
     opacity: 0.25;
   }
 }
+
 .booking-wrapper {
   margin: ($base-size * 3.5) auto;
   padding: ($base-size * 6) ($base-size * 4);
@@ -32,6 +34,7 @@
   }
   
 }
+
 .page__title {
   @extend .h1;
   margin: 0 0 ($base-size * 4) 0;
