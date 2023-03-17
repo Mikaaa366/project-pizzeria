@@ -8,9 +8,7 @@ class Cart {
     thisCart.products = [];
     thisCart.getElements(element);
     thisCart.initActions();
-      
-    //console.log('new Cart', thisCart);
-
+  
   }
   getElements(element){
     const thisCart = this;
@@ -47,7 +45,6 @@ class Cart {
   }
   add(menuProduct){
     const thisCart = this;
-    //console.log('adding product', menuProduct);
     /* generate HTML based on template */
     const generatedHTML = templates.cartProduct(menuProduct);
     /* generate element DOM using utils.createElementFromHTML */
@@ -56,7 +53,7 @@ class Cart {
     thisCart.dom.productList.appendChild(generatedDOM);
 
     thisCart.products.push(new cartProduct(menuProduct, generatedDOM));
-    //console.log('thisCart.products', thisCart.products);
+    
     thisCart.update();
   }
   update(){
@@ -106,7 +103,6 @@ class Cart {
       deliveryFee: settings.cart.defaultDeliveryFee,
       products: [],  
     };
-    console.log('payload', payload);
 
     for(let prod of thisCart.products){
       payload.products.push(prod.getData());

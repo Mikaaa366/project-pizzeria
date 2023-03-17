@@ -15,7 +15,7 @@
     "rule-empty-line-before": [ "always", {
       "except": ["first-nested"],
       "ignore": ["after-comment"]
-    } ],
+    }],
     "unit-allowed-list": null,
     "no-descending-specificity": null,
     "scss/selector-no-redundant-nesting-selector": true,

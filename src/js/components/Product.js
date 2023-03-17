@@ -12,8 +12,6 @@ class Product {
     thisProduct.initOrderForm();
     thisProduct.initAmountWidget();
     thisProduct.processOrder();
-      
-    console.log('new Product:', thisProduct);
   }
   renderInMenu(){
     const thisProduct = this;
@@ -87,12 +85,12 @@ class Product {
       thisProduct.processOrder();
       thisProduct.addToCart();
     });
-    console.log('inirOrderForm: ', thisProduct);
+    
   }
   processOrder(){
     const thisProduct = this;
     const formData = utils.serializeFormToObject(thisProduct.form);
-    console.log('formData', formData);
+    
 
     // set price to default price 
     let price = thisProduct.data.price;
@@ -101,13 +99,12 @@ class Product {
     for(let paramId in thisProduct.data.params) {
       //determine param value, e.g. paramId ='toppings'
       const param = thisProduct.data.params[paramId];
-      console.log(paramId, param);
+      
       
       // for every option in this category
       for(let optionId in param.options) {
         //determinate option value , e.g. optionId = 'olives'
         const option = param.options[optionId];
-        console.log(optionId, option);
         const optionSelected = formData[paramId] && formData[paramId].includes(optionId);
         const optionImage = thisProduct.imageWrapper.querySelector('.' + paramId + '-' + optionId);
         if(optionImage){

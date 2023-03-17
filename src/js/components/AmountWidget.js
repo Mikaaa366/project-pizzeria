@@ -6,9 +6,6 @@ class AmountWidget {
     thisWidget.getElements(element);
     thisWidget.setValue(settings.amountWidget.defaultValue);
     thisWidget.initActions();
-
-    //console.log('AmountWidget:', thisWidget);
-    //console.log('constructor arguments:', element);
   }
 
   getElements(element){

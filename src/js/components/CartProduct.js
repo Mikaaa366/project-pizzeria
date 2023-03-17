@@ -13,8 +13,6 @@ class cartProduct {
     thisCartProduct.getElements(element);
     thisCartProduct.initAmountWidget();
     thisCartProduct.initActions();
-
-    //console.log('cartProduct:', thisCartProduct);
   }
   getElements(element){
     const thisCartProduct = this;
