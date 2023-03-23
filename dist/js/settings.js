@@ -43,6 +43,11 @@ export const select = {
     peopleAmount: '.people-amount',
     hoursAmount: '.hours-amount',
     tables: '.floor-plan .table',
+    selectedTable: '.floor-plan',
+    dataTable: '.table.selected',
+    formB: 'booking-form',
+    tableButton: '.order-confirmation .btn-secondary',
+
   },
   nav: {
     links: '.main-nav a',
@@ -60,6 +65,7 @@ export const select = {
     formSubmit: '.cart__order [type="submit"]',
     phone: '[name="phone"]',
     address: '[name="address"]',
+    starters: '[name="starter"]',
   },
   cartProduct: {
     amountWidget: '.widget-amount',
