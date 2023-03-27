@@ -176,7 +176,7 @@
 
     &.selected {
 
-      color: lighten($color-dark, 40%);
+      color: #ffff;
   
       &::after {
         position: absolute;
@@ -185,7 +185,8 @@
         height: 100%;
         left: 0;
         top: 0;
-        background: $color-dark;
+        color: #ffff;
+        background: $color-success;
         opacity: 0.4;
         border: 3px, solid;
       }
