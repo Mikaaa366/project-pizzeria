@@ -1,6 +1,6 @@
 import { select } from '../settings.js';
 import AmountWidget from './AmountWidget.js';
-class cartProduct {
+class CartProduct {
   constructor(menuProduct, element){
     const thisCartProduct = this;
 
@@ -74,4 +74,4 @@ class cartProduct {
     return cartData;
   }
 }
-export default cartProduct;
+export default CartProduct;
