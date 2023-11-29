@@ -413,6 +413,24 @@
         }
       ],
       "id": 9
+    },
+    {
+      "address": "Koszalin",
+      "phone": "00393455073342",
+      "totalPrice": 40,
+      "subtotalPrice": 20,
+      "totalNumber": 1,
+      "deliveryFee": 20,
+      "products": [
+        {
+          "id": "pizza",
+          "amount": 1,
+          "price": 20,
+          "priceSingle": 20,
+          "name": "Nonna Alba's Pizza"
+        }
+      ],
+      "id": 10
     }
   ],
   "events": [
